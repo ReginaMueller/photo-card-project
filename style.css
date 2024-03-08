@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: aliceblue;
+}
+
+h1 {
+  border-left: 5px solid blue;
+  color: blue;
+  text-align: right;
+}
+
+h2 {
+  padding: 0.9rem;
+}
+
+p {
+  margin-right: 10%;
+}
+
+.star {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: auto;
+  background-color: white;
+}
+
+.natur {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+}
+
+.star:hover {
+  transform: rotate(365deg);
+  transition-duration: 5s;
+}
+
+.unterschrift {
+  padding: 0.9rem;
+}
