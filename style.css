@@ -22,14 +22,15 @@ html {
   font-size: var(--font-size);
   color: var(--text-color);
   line-height: 1.7;
-  display: flex;
-  justify-content: center;
+  _display: flex;
+  _justify-content: center;
 }
 
 body {
+  margin: auto;
+  width: 70%;
   background-color: var(--background-color);
-  _margin: 0 25% 40% 20%;
-  max-width: 50rem;
+  _max-width: 50rem;
 }
 
 h1 {
@@ -97,6 +98,31 @@ p {
 
 .unterschrift {
   padding: 0.5rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto, 1fr, auto, 1fr, auto, 1fr;
+  margin-bottom: 3rem;
+}
+
+footer section {
+  padding: 0.5rem;
+}
+
+footer section:not([class^="icon"]) {
+  border-left: 0.5rem solid var(--text-color);
+}
+.aboutMe {
+  grid-column: 2;
+}
+
+.aboutPet {
+  grid-column: 4;
+}
+
+.contact {
+  grid-column: 6;
 }
 
 @media (prefers-color-scheme: dark) {
