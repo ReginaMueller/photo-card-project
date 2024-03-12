@@ -1,8 +1,13 @@
 :root {
-  --text-color: #19196b;
-  --background-color: #f4f4ff;
+  --text-color-value: 025, 025, 107; /*Ausgangswert für die Textfarbe. An diesen Wert orientiert sich auch andere Farbgestaltung, z.B. shadow */
+  --background-color-value: 244, 244, 255; /*Ausgangswert für den Background*/
+
+  /*für die Änderung der Farbpalette sollten nur die oberen Variablen geändert werden. Alle anderen Werte verändern sich dann dynamisch*/
+
+  --text-color: rgb(var(--text-color-value));
+  --background-color: rgb(var(--background-color-value));
   --shadow: rgba(0, 0, 0, 0.5);
-  --shadow-in-text-color: rgba(025, 025, 107, 0.5);
+  --shadow-in-text-color: rgba(var(--text-color-value), 0.5);
   --widthOfPicture: 350px;
 }
 
@@ -84,7 +89,7 @@ p {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color: #f4f4ff;
-    background-color: #19196b;
+    --text-color-value: 244, 244, 255;
+    --background-color-value: 025, 025, 107;
   }
 }
