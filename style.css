@@ -9,20 +9,32 @@
   --shadow: rgba(0, 0, 0, 0.5);
   --shadow-in-text-color: rgba(var(--text-color-value), 0.5);
   --widthOfPicture: 350px;
+  --font-size: 1rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 html {
+  font-size: var(--font-size);
   color: var(--text-color);
   line-height: 1.7;
+  display: flex;
+  justify-content: center;
 }
 
 body {
   background-color: var(--background-color);
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
+  _margin: 0 25% 40% 20%;
+  max-width: 50rem;
 }
 
 h1 {
+  font-size: calc(4 * var(--font-size));
+  line-height: 1;
   border-left: 0.7rem solid var(--text-color);
   text-align: right;
 }
