@@ -1,10 +1,10 @@
-:root {
+/*:root {
   --text-color-value: 025, 025, 107; /*Ausgangswert für die Textfarbe. An diesen Wert orientiert sich auch andere Farbgestaltung, z.B. shadow */
-  --background-color-value: 244, 244, 255; /*Ausgangswert für den Background*/
+/* --background-color-value: 244, 244, 255; /*Ausgangswert für den Background*/
 
-  /*für die Änderung der Farbpalette sollten nur die oberen Variablen geändert werden. Alle anderen Werte verändern sich dann dynamisch*/
+/*für die Änderung der Farbpalette sollten nur die oberen Variablen geändert werden. Alle anderen Werte verändern sich dann dynamisch*/
 
-  --text-color: rgb(var(--text-color-value));
+/* --text-color: rgb(var(--text-color-value));
   --background-color: rgb(var(--background-color-value));
   --shadow: rgba(0, 0, 0, 0.5);
   --shadow-in-text-color: rgba(var(--text-color-value), 0.5);
@@ -19,18 +19,15 @@
 }
 
 html {
+  background-color: var(--background-color);
   font-size: var(--font-size);
   color: var(--text-color);
   line-height: 1.7;
-  _display: flex;
-  _justify-content: center;
 }
 
 body {
   margin: auto;
   width: 70%;
-  background-color: var(--background-color);
-  _max-width: 50rem;
 }
 
 h1 {
@@ -51,40 +48,60 @@ h2 {
 a {
   text-decoration-line: none;
 }
+*/
 
-.star {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  opacity: 0.5;
-  filter: grayscale(1);
-  transition: opacity 1s, filter 1s, transform 5s;
-}
+/* der auskommentierte Code ist wohl überflüssig, weil schon in style.css vorhanden.*/
 
 .main-container {
-  position: relative;
-  width: var(--widthOfPicture);
-  height: auto;
-  border-radius: 10px 10px 0 0;
+  height: 4rem;
+  border-radius: 10px;
   background-color: white;
   box-shadow: -30px 30px 100px 30px var(--shadow);
   margin-top: 40px;
   margin-bottom: 100px;
   transition: box-shadow 1s;
   overflow: hidden;
+  display: flex;
 }
 
 .picture-container {
   aspect-ratio: 16/9;
-  width: inherit;
+  height: inherit;
   transition: transform 2s;
   overflow: hidden;
+  flex-shrink: 0;
+  display: inline-flex;
 }
 
 .natur {
-  width: inherit;
-  border-radius: 10px 10px 0 0;
+  height: inherit;
+  border-radius: 10px;
   transition: width 1s;
+}
+
+.star {
+  margin: 1rem;
+  opacity: 0.5;
+  filter: grayscale(1);
+  transition: opacity 1s, filter 1s, transform 5s;
+}
+
+.beschreibung-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.card-ueberschrift {
+  margin: 0.5rem;
+}
+
+.card-text {
+  max-width: 70%;
+  padding: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
 }
 
 .star:hover {
@@ -101,11 +118,7 @@ a {
   transform: scale(1.1);
   transform-origin: center;
 }
-
-.unterschrift {
-  padding: 0.5rem;
-}
-
+/*
 footer {
   display: grid;
   grid-template-columns: auto, 1fr, auto, 1fr, auto, 1fr;
@@ -130,14 +143,4 @@ footer section:not([class^="icon"]) {
 .contact {
   grid-column: 6;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    background-color: var(--text-color);
-    color: var(--background-color);
-  }
-}
-
-@media screen and (max-width: 640px) {
-  /* hier soll wohl die listview.css eingebunden werden. Aber noch fehlt die Ahnung, wie es geht.*/
-}
+*/

@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Card</title>
     <link rel="stylesheet" href="https://unpkg.com/modern-normalize@latest/modern-normalize.css" />
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--link rel="stylesheet" href="listview.css"-->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <h1>Photo<br />Card</h1>
-        <p>
+        <p class="header-text">
             On this website you can find a card with a random image from
             <a href="https://www.unsplash.com">unsplash</a>. Try to focus on
             creating the main structure of the HTML and CSS first. Then add the
@@ -23,21 +24,20 @@
         </p>
     </header>
     <main>
-        <div class="container">
-            <div class="pictur-container">
+        <div class="main-container">
+            <div class="picture-container">
                 <img class="natur" src="https://source.unsplash.com/600x600/?nature" alt="Naturbild">
                 <img class="star" src="star.png" alt="*">
             </div>
-            <div class="unterschrift">
-                <h2>
+            <div class="beschreibung-container">
+                <h2 class="card-ueberschrift">
                     Natur
                 </h2>
-                <p>
+                <p class="card-text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, hic.
                 </p>
             </div>
         </div>
-
     </main>
     <footer>
         <section class="icon">
