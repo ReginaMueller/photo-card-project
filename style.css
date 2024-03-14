@@ -19,18 +19,15 @@
 }
 
 html {
+  background-color: var(--background-color);
   font-size: var(--font-size);
   color: var(--text-color);
   line-height: 1.7;
-  _display: flex;
-  _justify-content: center;
 }
 
 body {
   margin: auto;
   width: 70%;
-  background-color: var(--background-color);
-  _max-width: 50rem;
 }
 
 h1 {
@@ -40,25 +37,12 @@ h1 {
   text-align: right;
 }
 
-h2 {
-  padding: 0.1rem;
-}
-
 .header-text {
   max-width: 65ch;
 }
 
 a {
   text-decoration-line: none;
-}
-
-.star {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  opacity: 0.5;
-  filter: grayscale(1);
-  transition: opacity 1s, filter 1s, transform 5s;
 }
 
 .main-container {
@@ -76,19 +60,35 @@ a {
 
 .picture-container {
   aspect-ratio: 16/9;
+  box-sizing: border-box;
   width: inherit;
-  transition: transform 2s;
+  _height: 100%;
   overflow: hidden;
 }
 
 .natur {
   width: inherit;
   border-radius: 10px 10px 0 0;
-  transition: width 1s;
+  _transition: width 1s;
+  transition: transform 2s;
+}
+
+.star {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 1rem;
+  opacity: 0.5;
+  filter: grayscale(1);
+  transition: opacity 1s, filter 1s, transform 4s;
+}
+
+.beschreibung-container {
+  margin: 0.5rem;
 }
 
 .star:hover {
-  transform: rotate(365deg);
+  transform: scale(1.2) rotate(365deg);
   opacity: 1;
   filter: grayscale(0);
 }
@@ -97,13 +97,9 @@ a {
   box-shadow: -30px 30px 100px 30px var(--shadow-in-text-color);
 }
 
-.main-container:hover .picture-container {
+.main-container:hover .natur {
   transform: scale(1.1);
   transform-origin: center;
-}
-
-.unterschrift {
-  padding: 0.5rem;
 }
 
 footer {
@@ -119,6 +115,11 @@ footer section {
 footer section:not([class^="icon"]) {
   border-left: 0.5rem solid var(--text-color);
 }
+
+.h2 {
+  padding: 0.1rem;
+}
+
 .aboutMe {
   grid-column: 2;
 }
