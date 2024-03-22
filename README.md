@@ -51,12 +51,14 @@ Fügt über einen prefers-color-scheme: dark Media Query einen Dark Mode hinzu. 
 ### 3. Add a Footer:
 
 Fügt der Website einen dreispaltigen Footer hinzu. Das Footer Design soll Font Awesome Icons enthalten und von der Struktur so aussehen wie der Beispiel Screenshot:
-![image](https://github.com/FlausenImKopf/photo-card-nachbau-mit-sandra/assets/88251068/1c67ae51-b303-4f41-aa00-277c10452bcd)
+![image](https://github.com/ReginaMueller/photo-card-project/assets/157988156/a63408f0-3b42-4dd8-b283-0abec39c7106)
+
 
 ### 4. Create a list view:
 
 Erstelle ein zweites Stylesheet das du ergänzend zum ersten in die index.html Seite einfügst. Update deinen CSS Code im neuen Stylesheet so, dass die Karte als "List View" dargestellt wird:
-![image](https://github.com/FlausenImKopf/photo-card-nachbau-mit-sandra/assets/88251068/2836322b-9136-46c1-a73a-3ebb1ba49266)
+![image](https://github.com/ReginaMueller/photo-card-project/assets/157988156/f73300c3-449d-4561-beb2-132a217fb940)
+
 
 ### 5. Beide Stylesheets in index verlinken
 
