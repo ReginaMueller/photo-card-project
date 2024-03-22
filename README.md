@@ -1,8 +1,7 @@
 # Photocard Project
 
 Der Website-Layout sollte basierend auf Screenshots und Videos nachgebaut werden.
-
-![image](https://github.com/FlausenImKopf/photo-card-nachbau-mit-sandra/assets/88251068/72b1a254-783c-49bf-a834-b2f328bbcb0a)
+![image](https://github.com/ReginaMueller/photo-card-project/assets/157988156/35506374-e36e-4970-ae9c-d912dfd3efc7)
 
 ## Vorgebenen HTML Start Code:
 
